@@ -46,7 +46,10 @@ gulp.task('dev', ['browserSync', 'less'], function() {
 gulp.task('copy-images', function () {
     gulp.src(['img/*.jpg'])
         .pipe(imageop)
-        .pipe(gulp.dest('dist/img/'))
+        .pipe(gulp.dest('dist/img/'));
+    gulp.src(['img/*.png'])
+        .pipe(imageop)
+        .pipe(gulp.dest('dist/img/'));
 });
 
 gulp.task('copy-fonts', function () {

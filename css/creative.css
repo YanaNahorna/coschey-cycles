@@ -170,7 +170,6 @@ aside {
 }
 header {
   width: 100%;
-  min-height: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -446,6 +445,10 @@ body {
   width: 59vw;
   object-fit: contain;
 }
+.wide-carousel figcaption {
+  display: block;
+  padding: 10px 10px 0 10px;
+}
 .wide-carousel .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -519,6 +522,7 @@ body {
 .single-carousel .carousel-control {
   z-index: 50;
   background: none;
+  cursor: pointer;
 }
 .gears-description {
   color: #555555;
@@ -536,10 +540,21 @@ body {
 .how .row {
   margin-bottom: 10px;
 }
+@media (min-width: 992px) {
+  .how .row.text-first > div {
+    float: right;
+  }
+}
 .how .description {
   padding-top: 10%;
   text-align: center;
   font-size: 20px;
+}
+@media (max-width: 992px) {
+  .how .description {
+    padding: 10px 0 30px;
+    float: none;
+  }
 }
 .contacts {
   height: 604px;
