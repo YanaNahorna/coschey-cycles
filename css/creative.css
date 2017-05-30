@@ -3,9 +3,13 @@
   src: url(../fonts/liberation-fonts/LiberationMono-Regular.ttf);
 }
 @font-face {
+  font-family: "Liberation Mono";
+  src: url(../fonts/liberation-fonts/LiberationMono-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
   font-family: "9129";
   src: url(../fonts/9129.ttf);
-  font-weight: bold;
 }
 html,
 body {
@@ -13,7 +17,7 @@ body {
   width: 100%;
 }
 body {
-  font-family:  "Liberation Mono", Courier, "Lucida Console", 'Monaco', monospace;
+  font-family: "Liberation Mono", Courier, "Lucida Console", 'Monaco', monospace;
 }
 hr {
   border-color: #F05F40;
@@ -33,13 +37,15 @@ a:hover,
 a:focus {
   color: #eb3812;
 }
-h1,
+h1 {
+  font-family: "9129", Courier, "Lucida Console", 'Monaco', monospace;
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "9129", "Liberation Mono", Courier, "Lucida Console", 'Monaco', monospace;
+  font-family: "Liberation Mono", Courier, "Lucida Console", 'Monaco', monospace;
 }
 p {
   font-size: 16px;
